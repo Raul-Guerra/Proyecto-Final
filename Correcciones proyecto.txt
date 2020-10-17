@@ -1,0 +1,60 @@
+La planeación del problema a resolver no estaba en un formato readmy, ya está colocado en donde debería de estar y fuera del código
+El formato pep.8 ya fue corregido por completo en el código
+
+Biblioteca Extra
+Como biblioteca extra utilicé “import.time” que  nos permite cronometrar la duración de un intervalo de tiempo
+Usando la función de time.sleep que reduce el tiempo de despliegue en de la operación que se presente al usuario
+El uso de condicionales se puso desde un principio, cuando tuve que entregar la entrega se me fue la luz y le envíe un correo con el trabajo, que creo que no aceptó, por que no me contestó, pero adjunto el uso de las condicionales
+while  acum <= limite1:
+            if u1 == "refresco" or u1 == "Refresco" :
+                acum=acum+ref
+                bebida=bebida+1
+#elif hace que si no se cumple la primera condición, se cumplirá la siguiente condicion    
+            elif u1 == "cerveza" or u1 == "Cerveza" :
+                acum=acum+cer
+                bebida=bebida+1
+            elif u1 == "agua" or u1 == "Agua" :
+                acum=acum+agua
+                bebida=bebida+1
+            print("lleva acumulados:", acum, "pesos")
+            sino=str(input("¿Quiere otra bebida? coloque (sí) o (no)"))
+            if sino == "Sí" or sino == "Si" or sino == "sí" or sino == "si":
+                u1= str(input("Escriba la otra bebida que guste."))
+            else:
+                break
+
+La corrección de la lista es esta, porque usted me dijo que solo la imprimía y no se usaba realmente en el programa igual que la matriz
+Antes:
+print ("Estas bebidas saldrán a la venta proximanmente:")bebidasnuevas = ["Tequila", "Mojito", "Cuba","Whisky","Mezcal"]for bebida in bebidasnuevas:        print(bebida)print ("Vuelva pronto")
+print ("Esta es una sopa de letras por si quieres resolverla")
+matriz=[['T','F','M','B','A','R','F','R','J','J','Q','A','S','Q'],['P','U','K','R','L','Z','B','B','V','D','J','S','P','N'],['E','C','M','A','T','N','S','H','O','T','N','A','X','A'],['T','L','N','O','I','Z','U','Q','U','Q','Y','L','O','J'],['B','F','Q','X','E','F','X','B','R','F','R','U','P','B'],['N','O','I','C','C','U','D','O','R','P','E','D','A','P'],['H','Y','L','Y','Z','M','U','T','K','I','B','P','L','U'],['H','K','I','H','R','M','E','G','Z','M','C','X','P','S'],['O','D','A','M','B','P','B','A','F','Q','S','G','I','Z'],['B','L','R','Q','W','C','H','E','L','A','Z','A','O','O'],['A','U','Z','Z','V','R','O','F','H','C','L','J','D','N'],['J','V','Q','B','P','C','Z','X','Y','W','E','O','R','I'],['R','M','A','M','B','I','E','N','T','E','T','L','Ñ','A'],['N','U','B','R','X','G','E','L','A','Q','I','O','J','C']]print ("Encuentra las siguientes palabras:")print ("")print ("- BAR")print ("- SALUD")print ("- SHOTS")print ("- AMBIENTE")print ("- CHELA")print ("")imprime(matriz)
+
+Después:
+time.sleep(2)       
+print ("Escribe las bebidas que deseas que salgan proximamente:")
+#Esta lista funciona para guardar los datos ingresados por el usuario
+lista= []
+tamano=int(input("coloca el número de bebidas sugeridas"))
+for i in range(0,tamano):
+    nobebs = str(input("Escribe el nombre de las bebidas: "))
+    lista.insert(i, nobebs)
+print("Nos daría mucho tener en el menú estas bebidas: ", lista)
+print ("Vuelva pronto")
+
+
+print ("Si resuelves las adivinanzas, en la siguiente visita tienes descuento")
+print ("Fui por él y nunca lo traje, ¿Qué es?")
+print ("Nazco sin padre y al morir nace mi madre, ¿Quién soy?")
+#La matriz sirve para guardar información de varias listas
+m=[["A","Despensa","Batman"],["B","Cigarros","Gallina"],["C","Camino","Nieve"]]
+print("Opciones:")
+for x in range(0,len(m)):
+#X es un contador que nos sirve para la secuencia de las listas 
+    print(m[x][0]," ) " ,m[x][1], " y " ,m[x][2])
+r=str(input("\nColoca la letra de la opción correcta (MAYUSCULA)"))
+if r == "C" or r== "c":
+    print("Respuesta correcta")
+else:
+    print("Respuesta incorrecta, la respuesta correcta era la opción C")
+
+
