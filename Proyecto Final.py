@@ -2,13 +2,13 @@
 import time #Para que no se despliegue todo de golpe 
 def nombrecliente(nombre):
     print("¡Hola"+" "+"%s!"%nombre)
-#time.sleep es para que haya un tiempo de despliegue cuando se ejecuta el programa
+#Time es para que haya un tiempo de despliegue cuando se ejecuta el programa
     time.sleep(2)
     print("Este es un programa te ayudará a tener un menú de calidad")
     time.sleep(3)
 
 
-#cuandoescribe cualquier bebida del menú, se le restará el precio que se pagará 
+#cuandoescribe cualquier bebida del menú, sele restará lo que se pague 
 def cambio(u1,a):
 #la condicion "(A<12)" porque el agua es bebida más barata y cuesta 12 pesos 
     if (a<12):
@@ -26,7 +26,7 @@ def cambio(u1,a):
             if u1 == "refresco" or u1 == "Refresco" :
                 acum=acum+ref
                 bebida=bebida+1
-#elif hace que si no se cumple la primera condición, se cumplirá la siguiente condicion    
+#elif hace que si no se cumple la primera condición, se cumplirá la siguiente     
             elif u1 == "cerveza" or u1 == "Cerveza" :
                 acum=acum+cer
                 bebida=bebida+1
@@ -47,7 +47,7 @@ def main():
     nombre = input("Escribe tu nombre: ")
     nombrecliente(nombre)
     while True:
-        print("Elige tu bebida (1-3)")
+        print("Elige tu bebida (nombre)")
 #Este es el menú que se le muestra al cliente 
         print("Menú:")
         print("1. refreso 20 pesos")
@@ -92,6 +92,8 @@ if r == "C" or r== "c":
     print("Respuesta correcta")
 else:
     print("Respuesta incorrecta, la respuesta correcta era la opción C")
+
+
 
 
 
